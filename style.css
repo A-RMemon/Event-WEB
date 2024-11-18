@@ -1,0 +1,469 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* colour class */
+.purple {
+    color: rgb(173, 16, 173);
+}
+
+.parent {
+    width: 100%;
+}
+
+/* section one navbar */
+nav {
+    display: flex;
+    width: 100%;
+    height: 14vh;
+    align-items: center;
+    position: fixed;
+    background-color: #000;
+
+
+
+}
+
+.nav::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 14%;
+    background-color: #000;
+    z-index: -1;
+    opacity: 0.6;
+    position: fixed;
+
+}
+
+nav h1 {
+    color: white;
+    margin: 0 50px;
+}
+
+.hamburger {
+    background: wheat;
+    display: none;
+    margin: -5px 20px 0 10px;
+    position: relative;
+    left: 10px;
+
+}
+
+.lines {
+    background: #000;
+    color: #000;
+    width: 25px;
+    height: 5px;
+    margin-top: 3px;
+    border-radius: 10px;
+
+}
+
+nav ul {
+    display: flex;
+    margin-left: 17%;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    /* margin-left: 20px; */
+    /* margin: auto; */
+    padding: 10px;
+    color: rgb(255, 255, 255);
+}
+
+#nav-btn {
+    padding: 10px;
+    margin-left: 60px;
+    width: 15vw;
+    height: 7vh;
+    border-radius: 50px;
+    background: radial-gradient(circle, rgba(168, 38, 135, 1) 27%, rgba(252, 70, 107, 1) 100%);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+#nav-btn:hover {
+    color: white;
+    font-weight: bold;
+}
+
+/* Section 2 */
+.two {
+    width: 100%;
+    height: 110vh;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.two::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 110vh;
+    background: url(bg-images/bg\ 2.jpg)no-repeat center center/cover;
+    /* background-position: center; */
+    z-index: -2;
+}
+
+.sec-two-text {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-right: 10%;
+}
+
+.text-border {
+    /* background-color:rgb(173, 16, 173); */
+    width: 24.5vw;
+    /* height: 21px; */
+
+}
+
+.sec-two-text h1 {
+    /* position: relative; */
+    color: rgb(255, 255, 255);
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: end;
+}
+
+.sec-two-text p {
+    color: rgb(255, 255, 255);
+    margin: 10px 0;
+    background: #282828;
+    text-align: center;
+    width: auto;
+    padding: 5px;
+}
+
+.sec-two-text button {
+    width: 40%;
+    padding: 10px;
+    border-radius: 25px;
+    background: radial-gradient(circle, rgba(168, 38, 135, 1) 27%, rgba(252, 70, 107, 1) 100%);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.sec-two-text button:hover {
+    color: white;
+    font-weight: bold;
+}
+
+/* section three */
+.three {
+    background: url(bg-images/bg\ 3\ sec\ three.jpeg)no-repeat center center/cover;
+    /* width: 100%; */
+    height: 90vh;
+    width: 100%;
+    top: 0;
+}
+
+.three-sec {
+    width: 45%;
+    margin-left: 5%;
+}
+
+.three-sec div h4 {
+    /* border-bottom: 2px solid gray; */
+    border-bottom: 2px solid rgb(192, 192, 192);
+    display: inline-block;
+    margin-top: 15px;
+
+}
+
+.three-sec h1 {
+    color: white;
+    font-size: 3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.three-sec p {
+    color: white;
+    margin-top: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.three-sec button {
+    width: auto;
+    text-align: center;
+    padding: 10px 14px;
+    font-size: 1rem;
+    border-radius: 25px;
+    color: white;
+    background: radial-gradient(circle, rgba(168, 38, 135, 1) 27%, rgba(252, 70, 107, 1) 100%);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    margin-top: 10px;
+    /* outline: none; */
+    border: none;
+}
+.three-sec button:hover {
+    color: white;
+    font-weight: bold;
+}
+.date-area{
+    margin-left: 5%;
+    margin-top: 6%;
+    display: flex;
+    justify-content: space-around;
+}
+.paras{
+    width: 15%;
+}
+.paras p{
+    color: white;
+    margin-top: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2rem;
+}
+.date-container{
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    width: 70%;
+}
+.date-boxes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    width: 15%;
+    height: 15vh;
+    font-size:1.6rem ;
+    text-align: center;
+    font-family: fantasy;
+    
+}
+
+@media (min-width: 769px) and (max-width: 1124px) {
+    .hamburger {
+        display: block;
+
+
+    }
+    nav{
+        position: relative;
+        height: 14vh;
+        left: 0%;
+
+    }
+    .nav{
+        height: 0;
+    }
+    nav ul {
+        display: none;
+        overflow: hidden;
+        left: -70%;
+        /* left: -500px; */
+        background-color: aliceblue;
+        width: 30vw;
+        height: 70vh;
+        color: #000;
+        position: absolute;
+        top: 13vh;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        transition: left 1s ease;
+        /* display: none; */
+        /* width: auto; */
+
+    }
+    nav .active{
+        left: -17%;
+    }
+    nav ul li{
+        color: #000;
+    }
+    #nav-btn {
+        margin: 0;
+        margin-left: 10px;
+        /* width: 30vw; */
+        /* font-size: 0.5rem; */
+        /* padding: -20 20px; */
+    }
+    .date-boxes{
+    font-size:1.2rem ;
+    width: 17%;
+    height: auto;
+
+
+
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .hamburger {
+        display: block;
+        transform: translateX(100%);
+
+    }
+
+    nav{
+        position: relative;
+        height: 14vh;
+        left: 0%;
+
+    }
+    .nav{
+        height: 0;
+    }
+    nav ul {
+        display: none;
+        overflow: hidden;
+        left: -70%;
+        background-color: aliceblue;
+        width: 40vw;
+        height: 70vh;
+        color: #000;
+        position: absolute;
+        top: 13vh;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        /* display: none; */
+        /* width: auto; */
+        transition: all 0.5s ease-out;
+    }
+    nav .active{
+        left: -17%;
+    }
+
+    nav ul li{
+        color: #000;
+    }
+    #nav-btn {
+        margin: 0;
+        margin-left: 10px;
+        /* width: 30vw; */
+        font-size: 0.5rem;
+        /* padding: -20 20px; */
+    }
+    .sec-two-text h1 {
+        font-size: 3rem;
+    }
+    .three-sec h1{
+        font-size: 2.5rem;
+    }
+    .three-sec p{
+        font-size: 1rem;
+    }
+    .paras p {
+    font-size: 0.8rem;
+
+    }
+    .date-boxes{
+        font-size:1rem ;
+        width: 15%;
+        height: auto;
+        }
+}
+
+@media (max-width: 480px) {
+    .two::before{
+        background-position: center;
+    }
+    .hamburger {
+        display: block;
+
+    }
+
+
+    nav{
+        position: relative;
+        height: 14vh;
+        left: 0%;
+    }
+.nav{
+    height: 0;
+}
+    nav ul {
+        display: none;
+        overflow: hidden;
+        left: -200%;
+        background-color: aliceblue;
+        width: 100vw;
+        height: 53vh;
+        color: #000;
+        position: absolute;
+        top: 13vh;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        transition: left 1s ease;
+        /* display: none; */
+        /* width: auto; */
+    }
+    nav .active{
+        left: -17%;
+    }
+    nav ul li{
+        color: #000;
+        font-size: 0.7rem;
+    }
+    #nav-btn {
+        margin: 0;
+        margin-left: 10px;
+        width: 30vw;
+        font-size: 0.5rem;
+        /* padding: -20 20px; */
+    }
+    .nav::before{
+        overflow: hidden;
+    }
+    .sec-two-text h1 {
+        font-size: 2rem;
+    }
+
+    .sec-two-text p {
+        font-size: 0.7rem;
+    }
+
+    .sec-two-text button {
+        padding: auto;
+        font-size: 0.8rem;
+        width: auto;
+    }
+    .three-sec{
+        width: 90%;
+    }
+    .three-sec h1{
+        font-size: 2.5rem;
+    }
+    .three-sec p{
+        font-size: 1rem;
+    }
+    .date-area{
+        flex-direction: column;
+    }
+    .paras{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .paras p {
+        font-size: 1.3rem;
+    }
+    .date-container{
+        width: 95%;
+    }
+    .date-boxes{
+        font-size:1rem ;
+        padding: 5px;
+        width: 18%;
+        height: 17%;
+        margin-bottom: 10%;
+        }
+.three{
+    height: auto;
+}
+}
