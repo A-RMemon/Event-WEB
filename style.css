@@ -11,6 +11,8 @@
 
 .parent {
     width: 100%;
+    overflow-x: hidden;
+
 }
 
 /* section one navbar */
@@ -21,9 +23,7 @@ nav {
     align-items: center;
     position: fixed;
     background-color: #000;
-
-
-
+    z-index: +1;
 }
 
 .nav::before {
@@ -207,59 +207,273 @@ nav ul li {
     /* outline: none; */
     border: none;
 }
+
 .three-sec button:hover {
     color: white;
     font-weight: bold;
 }
-.date-area{
+
+.date-area {
     margin-left: 5%;
     margin-top: 6%;
     display: flex;
     justify-content: space-around;
 }
-.paras{
+
+.paras {
     width: 15%;
 }
-.paras p{
+
+.paras p {
     color: white;
     margin-top: 10px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1.2rem;
 }
-.date-container{
+
+.date-container {
     display: flex;
     color: white;
     justify-content: space-around;
     width: 70%;
 }
-.date-boxes{
+
+.date-boxes {
     display: flex;
     align-items: center;
     justify-content: center;
     border: 1px solid white;
     width: 15%;
     height: 15vh;
-    font-size:1.6rem ;
+    font-size: 1.6rem;
     text-align: center;
     font-family: fantasy;
-    
+
 }
 
+/* SEction Four */
+.four {
+    width: 100%;
+}
+
+.four-img {
+    width: 100vw;
+    height: auto;
+    background: url(bg-images/bg\ sec4.jpg)no-repeat center center/cover;
+    top: 0;
+
+}
+
+.Four-head {
+    text-align: center;
+    top: 5vh;
+    position: relative;
+}
+
+.Four-head p {
+    font-size: 1rem;
+    color: white;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.Four-head h2 {
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: white;
+}
+
+.four-cardContainer {
+    margin-top: 5%;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 3vw;
+    column-gap: 6vh;
+
+
+}
+
+.four-boxes {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    border-radius: 15px 15px 0 0;
+
+}
+
+.four-boxes:hover {
+    box-shadow: 0px 0px 10px 5px rgb(255, 255, 255);
+}
+
+.card-one {
+    background: url(bg-images/four-card1.jpeg)no-repeat center center/cover;
+    /* background-position-x: 100%; */
+    height: 60vh;
+}
+
+.card-two {
+    background: url(bg-images/four-card2.jpeg)no-repeat center center/cover;
+    /* width: 25%; */
+    height: 60vh;
+
+}
+
+.card-three {
+    background: url(bg-images/four-card3-2.jpeg)no-repeat right bottom/cover;
+    /* width: 25%; */
+    height: 60vh;
+}
+
+.card-four {
+    background: url(bg-images/four-card4.jpeg)no-repeat center center/cover;
+    /* width: 25%; */
+    height: 60vh;
+}
+
+.card-five {
+    background: url(bg-images/four-card5.jpeg)no-repeat center center/cover;
+    /* width: 25%; */
+    height: 60vh;
+}
+
+.card-six {
+    background: url(bg-images/four-card6.jpeg)no-repeat right center/cover;
+    /* width: 25%; */
+    height: 60vh;
+
+}
+
+.four-boxes h3 {
+    margin-bottom: 2%;
+    margin-left: 4%;
+    color: white;
+}
+
+.four-boxes h4 {
+    margin-left: 4%;
+    margin-bottom: 3%;
+    color: rgb(158, 0, 206);
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+
+}
+
+.four-btncontainer {
+    text-align: center;
+    width: 100%;
+    /* margin-bottom: 5%; */
+    padding: 3%;
+}
+
+.Four-btn {
+
+    padding: 10px;
+    width: 15vw;
+    height: 7vh;
+    border-radius: 50px;
+    color: white;
+    border: 2px solid white;
+    background: transparent;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0. ease;
+}
+
+.Four-btn:hover {
+    background-color: purple;
+    border: none;
+}
+/* Section five */
+.five-container{
+    background : url(bg-images/bg-sec5.jpeg)no-repeat center center/cover;
+    width: 100%;
+    height: auto;
+    
+}
+.fiveCard-container{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10%;
+}
+.five-cards{
+    width: 30%;
+    /* height: 80vh; */
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 10px;
+    margin-bottom: 5%;
+    letter-spacing: 1.3px;
+    padding: 30px 15px 15px 15px;
+    align-items: center;
+}
+.five-cards h1{
+    font-size: 3rem;
+}
+.five-cards button{
+    width:  60%;
+    font-size: 1.1rem;
+    padding: 10px;
+    height: 7vh;
+    border-radius: 50px;
+    background: radial-gradient(circle, rgba(168, 38, 135, 1) 27%, rgba(252, 70, 107, 1) 100%);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid black;
+    text-transform: capitalize;
+    transition: background 0.5s ease-in-out;
+}
+.five-cards button:hover{
+    background: grey;
+}
+.fa-lock{
+    font-size: 8rem ;
+    text-align: center;
+    margin-bottom: 5vw;
+
+}
+.five-containertext{
+    top: 5vmin;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.five-containertext p{
+    letter-spacing: 2px;
+}
+.five-containertext h1{
+    letter-spacing: 1px;
+    font-size: 2.5rem;
+}
 @media (min-width: 769px) and (max-width: 1124px) {
     .hamburger {
         display: block;
 
 
     }
-    nav{
+
+    nav {
         position: relative;
         height: 14vh;
         left: 0%;
-
+        position: fixed;
     }
-    .nav{
+
+    .nav {
         height: 0;
     }
+
     nav ul {
         display: none;
         overflow: hidden;
@@ -270,7 +484,7 @@ nav ul li {
         height: 70vh;
         color: #000;
         position: absolute;
-        top: 13vh;
+        top: 14vh;
         display: flex;
         align-items: flex-start;
         flex-direction: column;
@@ -279,12 +493,15 @@ nav ul li {
         /* width: auto; */
 
     }
-    nav .active{
+
+    nav .active {
         left: -17%;
     }
-    nav ul li{
+
+    nav ul li {
         color: #000;
     }
+
     #nav-btn {
         margin: 0;
         margin-left: 10px;
@@ -292,15 +509,48 @@ nav ul li {
         /* font-size: 0.5rem; */
         /* padding: -20 20px; */
     }
-    .date-boxes{
-    font-size:1.2rem ;
-    width: 17%;
-    height: auto;
+
+    .date-boxes {
+        font-size: 1.2rem;
+        width: 17%;
+        height: auto;
 
 
 
     }
+
+    .four-boxes {
+        margin-top: 5%;
+        width: 38%;
+        background-position-x: center;
+
+    }
+
+    .Four-btn {
+        width: 40vw;
+    }
+    .five-cards{
+        width: 30%;
+        /* height: 80vh; */
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        gap: 10px;
+        margin-bottom: 5%;
+        padding: 30px 15px 15px 15px;
+        align-items: center;
+    }
+    .five-cards p{
+        font-size: 0.8rem;
+    }
+    .five-cards button{
+        width: 20vw;
+        padding: 0;
+    }
 }
+
+
 
 @media (min-width: 481px) and (max-width: 768px) {
     .hamburger {
@@ -309,15 +559,18 @@ nav ul li {
 
     }
 
-    nav{
+    nav {
         position: relative;
         height: 14vh;
         left: 0%;
+        position: fixed;
 
     }
-    .nav{
+
+    .nav {
         height: 0;
     }
+
     nav ul {
         display: none;
         overflow: hidden;
@@ -327,7 +580,7 @@ nav ul li {
         height: 70vh;
         color: #000;
         position: absolute;
-        top: 13vh;
+        top: 14vh;
         display: flex;
         align-items: flex-start;
         flex-direction: column;
@@ -335,13 +588,15 @@ nav ul li {
         /* width: auto; */
         transition: all 0.5s ease-out;
     }
-    nav .active{
+
+    nav .active {
         left: -17%;
     }
 
-    nav ul li{
+    nav ul li {
         color: #000;
     }
+
     #nav-btn {
         margin: 0;
         margin-left: 10px;
@@ -349,46 +604,75 @@ nav ul li {
         font-size: 0.5rem;
         /* padding: -20 20px; */
     }
+
     .sec-two-text h1 {
         font-size: 3rem;
     }
-    .three-sec h1{
+
+    .three-sec h1 {
         font-size: 2.5rem;
     }
-    .three-sec p{
+
+    .three-sec p {
         font-size: 1rem;
     }
+
     .paras p {
-    font-size: 0.8rem;
+        font-size: 0.8rem;
 
     }
-    .date-boxes{
-        font-size:1rem ;
+
+    .date-boxes {
+        font-size: 1rem;
         width: 15%;
         height: auto;
-        }
+    }
+
+    .four-boxes {
+        margin-top: 5%;
+        width: 75%;
+        background-position-x: center;
+
+    }
+
+    .Four-btn {
+        width: 40vw;
+    }
+    .fiveCard-container{
+        flex-wrap: wrap;
+    }
+    .five-cards{
+        width: 80%;
+        padding-bottom: 5%;
+        border-radius: 5px;
+        letter-spacing: 2px;
+    }
 }
 
 @media (max-width: 480px) {
-    .two::before{
+    .two::before {
         background-position: center;
     }
+
     .hamburger {
         display: block;
 
     }
 
 
-    nav{
+    nav {
         position: relative;
         height: 14vh;
         left: 0%;
+        position: fixed;
     }
-.nav{
-    height: 0;
-}
+
+    .nav {
+        height: 0;
+    }
+
     nav ul {
-        display: none;
+        /* display: none; */
         overflow: hidden;
         left: -200%;
         background-color: aliceblue;
@@ -396,21 +680,24 @@ nav ul li {
         height: 53vh;
         color: #000;
         position: absolute;
-        top: 13vh;
+        top: 14vh;
         display: flex;
         align-items: flex-start;
         flex-direction: column;
-        transition: left 1s ease;
+        transition: left 1s ease-in-out;
         /* display: none; */
         /* width: auto; */
     }
-    nav .active{
+
+    nav .active {
         left: -17%;
     }
-    nav ul li{
+
+    nav ul li {
         color: #000;
         font-size: 0.7rem;
     }
+
     #nav-btn {
         margin: 0;
         margin-left: 10px;
@@ -418,9 +705,11 @@ nav ul li {
         font-size: 0.5rem;
         /* padding: -20 20px; */
     }
-    .nav::before{
+
+    .nav::before {
         overflow: hidden;
     }
+
     .sec-two-text h1 {
         font-size: 2rem;
     }
@@ -434,36 +723,83 @@ nav ul li {
         font-size: 0.8rem;
         width: auto;
     }
-    .three-sec{
+
+    .three-sec {
         width: 90%;
     }
-    .three-sec h1{
+
+    .three-sec h1 {
         font-size: 2.5rem;
     }
-    .three-sec p{
+
+    .three-sec p {
         font-size: 1rem;
     }
-    .date-area{
+
+    .date-area {
         flex-direction: column;
     }
-    .paras{
+
+    .paras {
         width: 100%;
         margin-bottom: 10px;
     }
+
     .paras p {
         font-size: 1.3rem;
     }
-    .date-container{
+
+    .date-container {
         width: 95%;
     }
-    .date-boxes{
-        font-size:1rem ;
+
+    .date-boxes {
+        font-size: 0.8rem;
         padding: 5px;
         width: 18%;
         height: 17%;
         margin-bottom: 10%;
-        }
-.three{
-    height: auto;
-}
+    }
+
+    .three {
+        height: auto;
+    }
+
+    .four-boxes {
+        margin-top: 5%;
+        width: 90%;
+        background-position-x: center;
+
+    }
+
+    .Four-head {
+        padding: 4%;
+    }
+
+    .Four-head p {
+        font-size: 0.8rem;
+        color: white;
+        font-weight: 100;
+        text-transform: uppercase;
+    }
+
+    .Four-head h2 {
+        font-size: 1rem;
+        font-family: Arial, Helvetica, sans-serif;
+        text-transform: uppercase;
+        color: white;
+    }
+
+    .Four-btn {
+        width: 50vw;
+    }
+    .fiveCard-container{
+        flex-wrap: wrap;
+    }
+    .five-cards{
+        width: 80%;
+        padding-bottom: 5%;
+        border-radius: 5px;
+        letter-spacing: 2px;
+    }
 }
