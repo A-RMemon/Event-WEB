@@ -457,6 +457,141 @@ nav ul li {
     letter-spacing: 1px;
     font-size: 2.5rem;
 }
+
+/* section six */
+.six{
+    background: linear-gradient(135deg,#1a2a6c,#b21f1f,#fdbb2d);
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+    padding: 1rem;
+
+}
+.six-header{
+    text-align: center;
+    margin: 2rem 0 ;
+    letter-spacing: 0.5px;
+}
+
+.six-header h1{
+    color: white;
+    font-size: 2.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.cards-con-six{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.cards-con-six div{
+    width: 21%;
+    border: 0.5px dotted;
+    height:202px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cards-con-six div img{
+    width: 80%;
+    height: 150px;
+    mix-blend-mode:darken;
+}
+.six-footer{
+    margin-top: 2rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+.six-fo{
+    padding: 1rem;
+    width: 40%;
+    /* height: auto; */
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    font-size: 1.2rem;
+    border-radius: 2rem;
+    backdrop-filter: blur(200px);
+}
+
+.six-t-img{
+    margin-top: 0.5rem;
+    display: flex;
+}
+.six-t-img img{
+    width: 20%;
+    height: 70%;
+    display: block;
+    mix-blend-mode:color-dodge;
+    border-radius: 100%;
+}
+.text-six{
+    margin-left: 0.8rem;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.text-six h2{
+font-size: 1.2rem;
+}
+.text-six h1{
+font-style: italic;
+}
+/* section seven 7 */
+.seven{
+    padding: 1rem;
+    width: 100%;
+    background: #000;
+    color: white;
+    height: 50vh;
+}
+.seven-con{
+    display: flex;
+}
+.sev-box,
+.sev-box2{
+    width: 45%;
+    padding: 1rem;
+}
+.sev-box p{
+    margin: 10px;
+    letter-spacing: 1px;
+    
+}
+.sev-box h1{
+    font-size: 2rem;
+}
+.sev-box p i{
+    margin-right: 5px;
+    font-size: 2rem;
+    animation: color 2s ease-in-out infinite;
+}
+
+.foo-icons i{
+    font-size: 3rem;
+    margin-left: 2rem;
+    animation: color 2s ease infinite;
+}
+.para{
+    border-bottom: 1px solid;
+    display: inline-block;
+    border-top: 1px solid;
+    font-size: 1.2rem;
+}
+@keyframes color{
+    from{
+        color: rgb(242, 242, 242);
+    }
+    35%{
+        color: #3f3e3e;
+    }
+    75%{
+        color: rgb(99, 99, 138);
+    }
+    100%{
+        color: wheat;
+    }
+}
+
 @media (min-width: 769px) and (max-width: 1124px) {
     .hamburger {
         display: block;
@@ -548,6 +683,25 @@ nav ul li {
     .five-cards button{
         width: 20vw;
         padding: 0;
+    }
+    .cards-con-six div img{
+        width: 70%;
+        height: 70%;
+    }
+    .cards-con-six div{
+        width: 21%;
+        height: 150px;
+    }
+    .six-fo{
+        width: 45%;
+        font-size: 1rem;
+    }
+    .para{
+        font-size: 1rem;
+    }
+    .sev-box,
+    .sev-box2{
+        width: 50%;
     }
 }
 
@@ -647,7 +801,46 @@ nav ul li {
         padding-bottom: 5%;
         border-radius: 5px;
         letter-spacing: 2px;
+    }   .cards-con-six div img{
+        width: 50%;
+        height: 40%;
     }
+    .cards-con-six div{
+        width: 21%;
+        height: 100px;
+    }.six-fo{
+        width: 48%;
+        font-size: 0.8rem;
+    }
+    .six-footer{
+        justify-content: space-between;
+        padding: 0%;
+    }
+    .para{
+        font-size: 0.5rem;
+        border-top: none;
+    }
+    .sev-box p i{
+        margin-right: 5px;
+        font-size: 1rem;
+    }
+    .sev-box p{
+        margin: 10px;
+        letter-spacing: 0px;
+        font-size: 0.6rem;
+        
+    }
+    .foo-icons i{
+        font-size: 2rem;
+        margin-left: 2rem;
+    }
+    
+    .sev-box,
+    .sev-box2{
+        width: 50%;
+        padding: 1rem;
+    }
+  
 }
 
 @media (max-width: 480px) {
@@ -802,5 +995,67 @@ nav ul li {
         padding-bottom: 5%;
         border-radius: 5px;
         letter-spacing: 2px;
+    }
+    .six-header h1{
+        font-size: 1.5rem;
+    }
+    .six-header h2{
+        font-size: 1rem;
+    }
+    
+    .cards-con-six div img{
+        width: 50%;
+        height: 40%;
+    }
+    .cards-con-six div{
+        width: 21%;
+        height: 100px;
+    }
+    .six-fo{
+        width: 48%;
+        font-size: 0.5rem;
+    }
+    .six-footer{
+        justify-content: space-between;
+        padding: 0%;
+    }
+    .text-six h1{
+        font-size: 0.8rem;
+
+    }
+    .text-six h2{
+        font-size: 0.7rem;
+    }
+    .para{
+        font-size: 0.5rem;
+        border-top: none;
+    }
+    .sev-box p i{
+        margin-right: 5px;
+        font-size: 1rem;
+        animation: color 2s ease-in-out infinite;
+    }
+    .sev-box p{
+        margin: 10px;
+        letter-spacing: 0px;
+        font-size: 0.4rem;
+        
+    }
+    .foo-icons{
+        display: flex;
+    }
+    .foo-icons i{
+        font-size: 1rem;
+        margin-left: 2rem;
+        animation: color 2s ease infinite;
+    }
+    
+    .sev-box,
+    .sev-box2{
+        width: 50%;
+        padding: 1rem;
+    }
+    .sev-box h1{
+        font-size: 1rem;
     }
 }
