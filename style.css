@@ -512,6 +512,7 @@ nav ul li {
     font-size: 1.2rem;
     border-radius: 2rem;
     backdrop-filter: blur(200px);
+    mix-blend-mode: color-burn;
 }
 
 .six-t-img{
